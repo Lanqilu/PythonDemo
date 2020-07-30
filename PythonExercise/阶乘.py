@@ -12,3 +12,15 @@ while x <= n:
     sum *= x
     x += 1
 print('while循环n!=', sum)
+
+
+# 求阶乘的递归做法
+def factorial(x):
+    if x == 1:
+        return 1
+    else:
+        return x * factorial(x - 1)
+
+
+if __name__ == '__main__':
+    print("递归n!="+str(factorial(6)))

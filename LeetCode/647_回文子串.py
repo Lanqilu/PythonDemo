@@ -48,5 +48,5 @@ class Solution:
 
 if __name__ == "__main__":
     a = Solution
-    b = a.countSubstrings('aaaa')
+    b = a.countSubstrings("aaaa")
     print(b)

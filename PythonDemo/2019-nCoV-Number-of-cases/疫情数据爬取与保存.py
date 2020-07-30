@@ -64,7 +64,7 @@ for date in dates.items():
 
 
     def text_save(filename, data):
-        file = open("./Data/"+filename, 'w', encoding="utf-8")
+        file = open("./Data/" + filename, 'w', encoding="utf-8")
         s = str(data)
         s = re.sub("<.+?>", "", s)
         print("{}:{}".format(date[0], s))

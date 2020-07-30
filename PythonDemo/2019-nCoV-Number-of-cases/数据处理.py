@@ -2,7 +2,6 @@
 import re
 import pandas as pd
 
-
 date_list = []
 new_cases_list = []
 
@@ -11,7 +10,7 @@ for i in range(301, 327):
 
 
 def data_clean(filename, k):
-    f = open("./Data/"+filename, 'r', encoding="utf-8")
+    f = open("./Data/" + filename, 'r', encoding="utf-8")
     file = f.read()
     status = ["新增确诊病例", "新增出院病例", "新增死亡病例", "新增疑似病例"]
     new_cases_dict = {"日期": k}
@@ -27,7 +26,6 @@ def data_clean(filename, k):
 
 for i in date_list:
     data_clean(i + ".txt", i)
-
 
 df = pd.DataFrame(new_cases_list)
 print(df)
